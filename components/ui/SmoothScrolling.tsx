@@ -3,7 +3,9 @@ import { ReactLenis } from 'lenis/react';
 
 export default function SmoothScrolling({ children }: { children: React.ReactNode }) {
   return (
-    <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
+    // lerp: 0.08 is slightly smoother than 0.1 — more buttery, still responsive
+    // duration: 1.2 keeps momentum without feeling laggy
+    <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
       {children}
     </ReactLenis>
   );

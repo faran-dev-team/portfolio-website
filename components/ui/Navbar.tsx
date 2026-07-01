@@ -1,9 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import MagneticButton from "@/components/ui/MagneticButton";
+import { SPRING_GENTLE, EXPO_OUT } from "@/lib/animations";
 
 const navLinks = [
   { name: "About", href: "/measm" },
@@ -12,61 +14,103 @@ const navLinks = [
   { name: "Awards", href: "/awards" },
   { name: "Academics", href: "/academics" },
   { name: "Testimonials", href: "/#testimonials" },
-  { name: "Contact", href: "/contact" }
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      // viewTransitionName anchors this element so it never slides during route transitions
+      style={{ viewTransitionName: "site-header" } as React.CSSProperties}
+      initial={prefersReducedMotion ? false : { y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: EXPO_OUT, delay: 0.1 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b border-border/50 py-4" : "bg-transparent py-6"
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-b border-border/50 py-4"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter">
-          Measm<span className="text-accent">.</span>
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-2xl font-bold tracking-tighter group"
+          transitionTypes={["nav-back"]}
+        >
+          <span className="relative">
+            Measm
+            <span className="text-accent transition-all duration-200 group-hover:tracking-widest">.</span>
+          </span>
         </Link>
-        
-        <nav className="hidden md:flex items-center gap-8">
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(link.href.split("#")[0]) && link.href.split("#")[0] !== "/";
+
             return (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  isActive ? "text-accent" : "text-muted-foreground hover:text-foreground"
+                transitionTypes={["nav-forward"]}
+                className={`relative text-sm font-medium transition-colors group ${
+                  isActive
+                    ? "text-accent"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.name}
+
+                {/* Active sliding pill */}
+                {isActive && (
+                  <motion.span
+                    layoutId="nav-pill"
+                    className="absolute -bottom-1 left-0 right-0 h-px bg-accent"
+                    transition={SPRING_GENTLE as object}
+                  />
+                )}
+
+                {/* Hover underline draw (for non-active links) */}
+                {!isActive && (
+                  <span
+                    className="absolute -bottom-1 left-0 right-0 h-px bg-foreground/40 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                    style={{ transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                  />
+                )}
               </Link>
             );
           })}
-          <Link 
-            href="/contact"
-            className="px-5 py-2.5 bg-accent text-background rounded-full text-sm font-semibold hover:bg-accent-hover transition-colors"
-          >
-            Get in touch
-          </Link>
+
+          {/* CTA Button with magnetic pull */}
+          <MagneticButton strength={0.25}>
+            <Link
+              href="/contact"
+              transitionTypes={["nav-forward"]}
+              className="px-5 py-2.5 bg-accent text-background rounded-full text-sm font-semibold hover:bg-accent-hover transition-colors block"
+            >
+              Get in touch
+            </Link>
+          </MagneticButton>
         </nav>
 
-        {/* Mobile Navigation */}
+        {/* Mobile CTA */}
         <div className="md:hidden flex items-center gap-4">
-          <Link 
+          <Link
             href="/contact"
+            transitionTypes={["nav-forward"]}
             className="px-4 py-2 bg-accent text-background rounded-full text-sm font-semibold hover:bg-accent-hover transition-colors"
           >
             Contact
