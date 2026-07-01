@@ -3,6 +3,9 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import SmoothScrolling from "@/components/ui/SmoothScrolling";
+import CustomCursor from "@/components/ui/CustomCursor";
+import GravityField from "@/components/ui/GravityField";
+import PageTransitionWrapper from "@/components/ui/PageTransitionWrapper";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -32,9 +35,13 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col selection:bg-accent selection:text-black">
+        <CustomCursor />
+        <GravityField />
         <SmoothScrolling>
           <Navbar />
-          {children}
+          <PageTransitionWrapper>
+            {children}
+          </PageTransitionWrapper>
         </SmoothScrolling>
       </body>
     </html>
