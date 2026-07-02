@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+<rect width="200" height="200" rx="44" fill="#1A1F2B"/>
+<text x="100" y="132" font-family="FrauncesSemi, Georgia, serif" font-weight="600" font-size="120" fill="#F5F2EC" text-anchor="middle">M</text>
+<rect x="60" y="150" width="80" height="4" rx="2" fill="#C8A25A"/>
+</svg>

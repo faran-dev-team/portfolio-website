@@ -34,23 +34,23 @@ export default function Navbar() {
       initial={prefersReducedMotion ? false : { y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: EXPO_OUT, delay: 0.1 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border/50 py-4"
-          : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-background/80 backdrop-blur-md border-b border-border/50 py-4"
+        : "bg-transparent py-6"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tighter group"
+          className="flex items-center group"
           transitionTypes={["nav-back"]}
         >
-          <span className="relative">
-            Measm
-            <span className="text-accent transition-all duration-200 group-hover:tracking-widest">.</span>
-          </span>
+          <img
+            src="/logo/wordmark-on-ink.png"
+            alt="Measm."
+            className="h-18 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -66,11 +66,10 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 transitionTypes={["nav-forward"]}
-                className={`relative text-sm font-medium transition-colors group ${
-                  isActive
-                    ? "text-accent"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`relative text-sm font-medium transition-colors group ${isActive
+                  ? "text-accent"
+                  : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 {link.name}
 

@@ -1,53 +1,53 @@
 export const PORTFOLIO_CONTENT = {
   home: {
     hero: {
-      badge: "Available for Impact",
+      badge: "Available for Impact · Operating Globally · Remote-First",
       title: "Muhammad Measm Raza",
-      subtitle: "Founder | Climate-Tech Entrepreneur | Global Impact Builder",
-      description: "Building verified climate impact, scalable technology, and globally distributed companies from day one.",
+      subtitle: "Founder · Climate-Tech & Technology Entrepreneur · Global Impact Builder",
+      description: "Founder and Executive Lead of MeeTech Labs, building and operating ventures across climate-tech, technology platforms, and digital services. I assemble teams, validate ideas, and ship real products for global adoption and measurable impact.",
       tags: ["Operating globally", "Remote-first", "Founder-led"],
       primaryAction: "Explore the Work",
       secondaryAction: "Contact Founder"
     }
   },
   about: {
-    title: "REAL-WORLD PROBLEMS.",
-    subtitle: "I build systems that solve real-world problems at scale.",
+    title: "EXECUTION FIRST. ALWAYS.",
+    subtitle: "I build systems that solve real problems at scale.",
     paragraphs: [
-      "I am a young founder, researcher, and global impact builder leading multi-sector ventures across climate-tech, ESG infrastructure, technology platforms, and digital services.",
-      "I operate remote-first, globally distributed teams, build scalable products, publish research, and launch solutions designed for international adoption and measurable impact.",
-      "My work sits at the intersection of technology, sustainability, and execution, focused on transparency, verification, and systems that scale beyond borders."
+      "I am a founder, researcher, and impact builder leading multi-sector ventures across climate-tech, ESG infrastructure, technology platforms, and digital services.",
+      "I operate remote-first, globally distributed teams. I build scalable products, publish research, and launch solutions designed for international adoption and measurable results. My work sits at the intersection of technology, sustainability, and execution, with a focus on transparency, verification, and systems that scale beyond borders.",
+      "I do not start with theory. I start by assembling the right people, validating the idea against reality, and building something real."
     ],
     stats: [
       { id: 1, icon: "globe", value: "15+", label: "Countries Impacted" },
-      { id: 2, icon: "users", value: "1000+", label: "Youth Trained" },
-      { id: 3, icon: "rocket", value: "10+", label: "Ventures & Projects" },
-      { id: 4, icon: "trophy", value: "5+", label: "Major Global Awards" }
+      { id: 2, icon: "users", value: "1,000+", label: "Youth Trained" },
+      { id: 3, icon: "rocket", value: "10+", label: "Ventures Founded" },
+      { id: 4, icon: "trophy", value: "5+", label: "Awards & Recognitions" }
     ],
     secondaryStats: {
-      title: "Climate-Tech Entrepreneur & Global Impact Builder",
-      description: "Transforming ideas into ventures, research, and initiatives that create measurable global change through entrepreneurship, AI innovation, policy advocacy, and youth empowerment.",
+      title: "One parent organization. Many ventures. A single standard of execution.",
+      description: "I am the Founder and Executive Lead of MeeTech Labs, a parent organization that builds and operates ventures across climate-tech, technology, education, and digital infrastructure. Every venture inherits the same operating standard: clear ownership, transparent governance, and a path to independent scale.",
       stats: [
-        { value: "200+", label: "STUDENTS TRAINED" },
-        { value: "5+", label: "COUNTRIES REACHED" },
-        { value: "7", label: "VENTURES FOUNDED" }
+        { value: "1,000+", label: "YOUTH TRAINED" },
+        { value: "15+", label: "COUNTRIES IMPACTED" },
+        { value: "10+", label: "VENTURES FOUNDED" }
       ]
     }
   },
   work: {
     strategicEcosystem: {
-      title: "VENTURES.",
-      subtitle: "Meetech Labs & Ecosystem scale beyond one project.",
+      title: "Built to scale beyond one project.",
+      subtitle: "MeeTech Labs builds and operates ventures across sectors, providing structure, capital readiness, and shared infrastructure so each company can move fast without starting from zero.",
       cards: [
         {
           icon: "building",
           title: "PARENT ORGANIZATION",
-          description: "Meetech Labs builds and operates ventures across sectors, providing structure, capital readiness, and shared infrastructure."
+          description: "MeeTech Labs builds and operates ventures across sectors, providing structure, capital readiness, and shared infrastructure."
         },
         {
           icon: "layers",
           title: "MULTI-SECTOR FOCUS",
-          description: "Climate-tech, digital platforms, education, and global services united by execution-first and transparent governance."
+          description: "Climate-tech, digital platforms, education, and global services, united by an execution-first mindset and transparent governance."
         }
       ]
     },
@@ -65,7 +65,7 @@ export const PORTFOLIO_CONTENT = {
       {
         icon: "graduationCap",
         title: "Education & innovation",
-        description: "Programs, research, and capacity-building for the next generation of builders and leaders."
+        description: "Programs, research, and capacity-building for the next generation of builders."
       },
       {
         icon: "globe",
@@ -78,7 +78,7 @@ export const PORTFOLIO_CONTENT = {
         {
           id: "01",
           title: "Independent scalability",
-          description: "Each venture is designed to grow on its own with clear ownership, metrics, and path to sustainability."
+          description: "Each venture is designed to grow on its own, with clear ownership, metrics, and a path to sustainability."
         },
         {
           id: "02",
@@ -95,17 +95,17 @@ export const PORTFOLIO_CONTENT = {
         {
           icon: "wifi",
           title: "Remote-first",
-          description: "Teams and operations are distributed by design, no single HQ required to deliver at scale."
+          description: "Teams and operations are distributed by design. No single HQ required to deliver at scale."
         },
         {
           icon: "users",
           title: "Distributed execution",
-          description: "Work happens where talent and opportunity are; coordination and systems keep everything aligned."
+          description: "Work happens where talent and opportunity are; systems keep everything aligned."
         },
         {
           icon: "settings",
           title: "System-based growth",
-          description: "Processes, platforms, and governance scale with the portfolio, not ad hoc, but repeatable."
+          description: "Processes, platforms, and governance scale with the portfolio. Repeatable, not ad hoc."
         }
       ]
     },
@@ -113,26 +113,50 @@ export const PORTFOLIO_CONTENT = {
       {
         tag: "FEATURED",
         title: "GREYN",
-        subtitle: "Building a greener tomorrow.",
-        description: "Scalable technology and climate systems built for verification, impact, and scale beyond...",
+        subtitle: "Climate-tech and ESG infrastructure",
+        description: "Verified carbon and impact systems built for transparency, accountability, and scale beyond borders.",
         imageColor: "bg-green-900/20",
         imageText: "GREYN"
       },
       {
-        tag: "POPULAR",
+        tag: "FLAGSHIP",
         title: "MEETECH",
-        subtitle: "Where Ideas Meet Technology",
-        description: "We design and develop modern web, mobile, and software solutions. Our mission is to solv...",
+        subtitle: "Web, mobile, and software development",
+        description: "We solve real business problems with scalable, secure, and future-focused technology, delivered founder-led with full transparency.",
         imageColor: "bg-blue-900/20",
-        imageText: "Digital Builders"
+        imageText: "MEETECH"
+      },
+      {
+        tag: "NEW",
+        title: "FOREMAN",
+        subtitle: "Vertical AI for the trades",
+        description: "An AI front office that answers every missed call for HVAC and home-services businesses, qualifies the job, and books it automatically.",
+        imageColor: "bg-orange-900/20",
+        imageText: "FOREMAN"
       },
       {
         tag: "POPULAR",
         title: "ACCEPTOPIA",
-        subtitle: "Discover the future of university applications now",
-        description: "A modern, AI-powered admissions platform transforming the way students apply to universi...",
-        imageColor: "bg-slate-900/20",
-        imageText: "Welcome to Acceptopia"
+        subtitle: "Transforming the application journey",
+        description: "A gamified platform that turns the US university application journey into an interactive, motivating, and stress-free experience.",
+        imageColor: "bg-purple-900/20",
+        imageText: "ACCEPTOPIA"
+      },
+      {
+        tag: "FEATURED",
+        title: "OATIFY",
+        subtitle: "Balanced living nutrition brand",
+        description: "A nutrition brand promoting balanced living through gluco-friendly breakfast products that support stable energy and healthier lifestyles.",
+        imageColor: "bg-amber-900/20",
+        imageText: "OATIFY"
+      },
+      {
+        tag: "POPULAR",
+        title: "DEMETER",
+        subtitle: "Product scanning application",
+        description: "A mobile app that scans products to instantly reveal health, halal, environmental, and ethical ratings.",
+        imageColor: "bg-teal-900/20",
+        imageText: "DEMETER"
       }
     ]
   },
@@ -165,12 +189,17 @@ export const PORTFOLIO_CONTENT = {
       {
         icon: "rocket",
         title: "TKS",
-        description: "The Knowledge Society innovation and future-building."
+        description: "Frontier technology and future-building."
       },
       {
         icon: "bookOpen",
         title: "LaunchX",
-        description: "Entrepreneurship and venture building."
+        description: "Entrepreneurship and venture-building."
+      },
+      {
+        icon: "target",
+        title: "LeanGap",
+        description: "Lean methodology and execution frameworks."
       }
     ],
     leadershipAndService: [
@@ -178,19 +207,19 @@ export const PORTFOLIO_CONTENT = {
         icon: "heart",
         tag: "UNICEF",
         title: "Global Youth Advocate",
-        description: "Partnerships and initiatives with UNICEF in youth, education, and sustainable development."
+        description: "Partnerships and initiatives in youth, education, and sustainable development."
       },
       {
         icon: "handshake",
         tag: "GLOBAL AMBASSADOR",
         title: "Diplomatic Representation",
-        description: "Representing organizations and causes on global stages policy, sustainability, and youth."
+        description: "Representing organizations and causes on global stages across policy, sustainability, and youth."
       },
       {
         icon: "mic",
         tag: "CONFERENCES",
         title: "Public Address",
-        description: "Speaking and facilitating at conferences, panels, and global forums on impact, tech, and leadership."
+        description: "Speaking and facilitating at conferences, panels, and global forums on impact, technology, and leadership."
       }
     ]
   },
@@ -198,105 +227,105 @@ export const PORTFOLIO_CONTENT = {
     institutionalRecognition: [
       {
         id: "01",
-        title: "PENN FOSTER HIGH SCHOOL",
-        description: "Accelerated graduation in 2024 at age 16 with a 4.0 GPA, specializing in global affairs, economics, and business.",
+        title: "UNIVERSITY OF NORTH TEXAS",
+        description: "Pursuing Business Management.",
         icon: "graduationCap"
       },
       {
         id: "02",
-        title: "THE KNOWLEDGE SOCIETY (TKS)",
-        description: "Selected globally for highly competitive 10-month accelerator focusing on emerging technologies, mindset, and real-world problem solving.",
-        icon: "rocket"
+        title: "JOHN LOCKE INSTITUTE",
+        description: "Summer Scholar and Essay Finalist at the prestigious John Locke Institute.",
+        icon: "bookOpen"
       },
       {
         id: "03",
-        title: "LAUNCHX",
-        tag1: "SCHOLARSHIP RECIPIENT",
-        description: "Accepted into premier entrepreneurship program; developed sustainable tech ventures with global teams.",
-        icon: "zap"
+        title: "DELTA EPSILON TAU",
+        tag1: "HONOR SOCIETY",
+        description: "Recognized for distance-education excellence and academic integrity (2025).",
+        icon: "award"
       }
     ],
     innovationAndVentures: [
       {
         id: "01",
-        title: "UNICEF & YOUTH INITIATIVES",
-        description: "Advised and launched youth-led impact initiatives supported by UNICEF, focusing on education and technology access in underserved regions.",
+        title: "LAUNCHX & LEANGAP",
+        description: "95 to 97% merit-based scholarships for global entrepreneurship programs.",
         icon: "star"
       },
       {
         id: "02",
-        title: "GLOBAL COMPETITIONS",
-        description: "Finalist and winner in multiple international hackathons and pitch competitions, validating tech-driven solutions for climate and education.",
-        icon: "trophy"
+        title: "THE KNOWLEDGE SOCIETY (TKS)",
+        description: "Frontier-technology focus, developing solutions for world-scale problems.",
+        icon: "rocket"
       },
       {
         id: "03",
-        title: "RESEARCH & POLICY",
-        description: "Authored policy papers on the intersection of AI, sustainability, and education, presented at global youth summits.",
-        icon: "bookOpen"
+        title: "IVY LEAGUE MERIT SCHOLAR",
+        description: "Merit scholarships (20 to 50%) from Yale, Dartmouth, and Oxford programs.",
+        icon: "trophy"
       }
     ],
     strategicMilestones: [
       {
         id: "01",
-        tag: "MILESTONE",
-        title: "EARLY GRADUATION",
-        description: "Completed full high school curriculum two years early with highest honors to pursue full-time entrepreneurship.",
+        tag: "ACADEMICS",
+        title: "CFA PROGRAM",
+        description: "Level I candidate (Feb 2026).",
         icon: "target"
       },
       {
         id: "02",
-        tag: "MILESTONE",
-        title: "FIRST VENTURE",
-        description: "Founded first tech startup at 15, scaling to 10+ countries and securing early-stage backing.",
-        icon: "briefcase"
+        tag: "LANGUAGE",
+        title: "OXFORD ELLT",
+        description: "Certified, Advanced Proficiency.",
+        icon: "globe"
       },
       {
         id: "03",
-        tag: "MILESTONE",
-        title: "GLOBAL RECOGNITION",
-        description: "Recognized as a top young changemaker by international organizations before turning 16.",
-        icon: "globe"
+        tag: "TESTING",
+        title: "GMAT / GRE",
+        description: "In preparation (target 750+ / 320+).",
+        icon: "briefcase"
       }
     ],
     deepExpertise: [
       {
         id: "01",
-        title: "ARTIFICIAL INTELLIGENCE",
-        description: "Applied AI in building scalable educational platforms and climate-tech verification systems.",
+        title: "WHARTON BUSINESS ANALYTICS",
+        description: "Data-driven entrepreneurship and strategic scaling.",
         icon: "cpu"
       },
       {
         id: "02",
-        title: "SUSTAINABILITY & ESG",
-        description: "Deep research and implementation of ESG frameworks for modern tech ventures.",
-        icon: "leaf"
+        title: "MIT SLOAN INNOVATION",
+        description: "Strategic innovation and technology management.",
+        icon: "lightbulb"
       },
       {
         id: "03",
-        title: "GLOBAL POLICY",
-        description: "Understanding of international frameworks and how to align tech startups with global goals.",
-        icon: "scale"
+        title: "CLOUD & AI (GOOGLE / AWS)",
+        description: "Technical certifications in cloud computing and AI infrastructure.",
+        icon: "cloud"
       }
     ],
     excellenceInEducation: [
       {
         id: "01",
-        title: "VALEDICTORIAN / HIGHEST HONORS",
-        description: "Maintained a perfect 4.0 GPA across all advanced coursework.",
+        title: "VALEDICTORIAN / 4.0 GPA",
+        description: "Maintained a perfect 4.0 GPA across high-rigor, U.S. accredited secondary education.",
         icon: "medal"
       },
       {
         id: "02",
-        title: "PRESIDENT'S AWARD",
-        description: "Received national recognition for outstanding academic excellence and civic leadership.",
+        title: "GOLD MEDALIST",
+        description: "Business, Finance, and Economics Olympiads and competitions, recognized for academic excellence.",
         icon: "award"
       },
       {
         id: "03",
-        title: "MERIT SCHOLARSHIPS",
-        description: "Awarded full merit scholarships to multiple global accelerators and university programs.",
-        icon: "graduationCap"
+        title: "GOLD KEY OF EXCELLENCE",
+        description: "Delta Epsilon Tau National Honor Society. A symbol of honor for academic excellence.",
+        icon: "key"
       }
     ]
   },
@@ -305,92 +334,104 @@ export const PORTFOLIO_CONTENT = {
       {
         id: "01",
         tag: "GLOBAL IMPACT",
-        title: "GLOBAL YOUTH AWARD",
-        description: "Recognized for outstanding contribution to sustainable tech and education on a global scale.",
+        title: "GLOBAL RECOGNITION AWARD 2025",
+        description: "For outstanding youth leadership and innovation with measurable global impact.",
         icon: "trophy"
       },
       {
         id: "02",
         tag: "LEADERSHIP",
-        title: "GLOBAL YOUTH AMBASSADOR",
-        description: "Appointed to represent youth initiatives and policy on international platforms.",
+        title: "GLOBAL YOUTH LEADERSHIP 2025",
+        description: "Author of The Young Capitalist, becoming the world's youngest research-based author in business and finance.",
         icon: "crown"
       },
       {
         id: "03",
         tag: "WORLD RECORD",
-        title: "OFFICIAL WORLD RECORD",
-        description: "Achieved a verified world record for youth entrepreneurship and tech deployment.",
+        title: "OFFICIAL WORLD RECORD (EUROPE)",
+        description: "Recognized as the Youngest Founder of a Multi-Sector Social Enterprise.",
         icon: "star"
       }
     ],
     internationalRecognition: [
       {
         id: "01",
-        title: "CLIMATE-TECH INNOVATOR",
-        description: "Nominated for top 100 global climate-tech innovators under 20.",
+        title: "INTERNATIONAL CHILDREN'S PEACE PRIZE",
+        description: "Nominated.",
         icon: "globe"
       },
       {
         id: "02",
-        title: "ESG EXCELLENCE",
-        description: "Received industry recognition for transparent governance in tech startups.",
+        title: "GLOBAL STUDENT PRIZE 2025",
+        description: "Nominated.",
         icon: "target"
       },
       {
         id: "03",
-        title: "ED-TECH PIONEER",
-        description: "Awarded for creating scalable educational platforms reaching 10+ countries.",
+        title: "ASHOKA YOUNG CHANGEMAKERS",
+        description: "Nominated.",
         icon: "sparkles"
       }
     ],
     globalService: [
       {
         id: "01",
-        tag: "SERVICE",
-        title: "UN YOUTH DELEGATE",
-        description: "Participated in global summits advocating for tech access and sustainability.",
+        tag: "AMBASSADOR",
+        title: "THEIRWORLD",
+        description: "Global Youth Ambassador. Advocating for education equity and youth empowerment.",
         icon: "users"
       },
       {
         id: "02",
-        tag: "ADVISORY",
-        title: "BOARD OF DIRECTORS",
-        description: "Serve as the youngest advisory board member for several global non-profits.",
-        icon: "briefcase"
+        tag: "NOMINEE",
+        title: "GLOBAL PEACE CHAIN",
+        description: "Director Nominee. Representing youth leadership in peace and diplomacy.",
+        icon: "shield"
       },
       {
         id: "03",
-        tag: "MENTORSHIP",
-        title: "GLOBAL MENTOR",
-        description: "Mentoring next-generation founders across 15+ countries in building impact ventures.",
-        icon: "globe"
+        tag: "LEADERSHIP",
+        title: "STATE OF YOUTH",
+        description: "Chapter Leader. Leading youth engagement and empowerment initiatives.",
+        icon: "flag"
       }
     ]
   },
   testimonials: [
     {
-      quote: "Measm's ability to execute complex technical visions while maintaining a deep focus on global impact is unparalleled. He's building the future.",
-      author: "Sarah Jenkins",
-      role: "Director, Global Tech Initiative",
+      quote: "Measm doesn't just build products, he builds systems that scale. His climate-tech vision transformed how we approach ESG verification across our entire portfolio.",
+      author: "Ahmad Al-Farsi",
+      role: "Managing Director, Gulf Ventures Capital",
       rating: 5
     },
     {
-      quote: "Working with Measm on climate-tech solutions has been incredible. His dedication to transparent governance and scalable systems is exactly what the industry needs.",
-      author: "Dr. Ahmed Khan",
-      role: "Lead Researcher, ESG Frameworks",
+      quote: "Working with MeeTech Labs was a turning point for us. The team delivered a production-grade platform in weeks, not months. Measm's execution-first approach is rare and refreshing.",
+      author: "Rachel Morrison",
+      role: "COO, Nexus Digital, USA",
       rating: 5
     },
     {
-      quote: "A rare combination of technical brilliance and entrepreneurial drive. Measm doesn't just talk about changing the world; he builds the systems to do it.",
-      author: "Elena Rodriguez",
-      role: "Partner, LaunchX Ventures",
+      quote: "We hired MeeTech for a complex SaaS build. What impressed me most was the transparency, every milestone tracked, every decision documented. True founder-led delivery.",
+      author: "Omar Siddiqui",
+      role: "Founder & CEO, ScaleUp MENA",
+      rating: 5
+    },
+    {
+      quote: "Measm's research on digital transformation of SMEs directly influenced our strategy. His ability to bridge academic rigor with real-world execution is unmatched for someone his age.",
+      author: "Dr. Elena Fischer",
+      role: "Director of Innovation, European Digital Council",
+      rating: 5
+    },
+    {
+      quote: "From UNICEF collaborations to global youth programs, Measm walks the talk. His impact work isn't performative, it's structural, scalable, and deeply intentional.",
+      author: "Priya Sharma",
+      role: "Program Lead, Global Youth Alliance",
       rating: 5
     }
   ],
   testimonial: {
     quote: "A framework for repeatable success across borders.",
-    author: "Measm Raza"
+    author: "Muhammad Measm Raza"
   },
   vision: {
     statement: "To build a sustainable, scalable ecosystem of ventures that solve the world's most pressing challenges.",
@@ -398,9 +439,9 @@ export const PORTFOLIO_CONTENT = {
   },
   contact: {
     cta: "LET'S BUILD TOGETHER",
-    subtitle: "I'm always open to discussing new ventures, partnerships, and impact initiatives.",
-    email: "contact@measm.com",
-    whatsapp: "+1 (555) 123-4567",
-    instagram: "@measm.raza"
+    subtitle: "Have a project in mind? Choose your preferred way to connect.",
+    email: "contact@muhammadmeasmraza.com",
+    whatsapp: "+971 56 375 6215",
+    instagram: "@mesamraza.official"
   }
 };

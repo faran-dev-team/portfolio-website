@@ -9,10 +9,10 @@ const DAMPING = 0.78;          // velocity damping per 60fps frame — higher = 
 const TRAIL_LENGTH = 22;       // number of comet-tail points
 const ORB_RADIUS = 5;          // base glowing orb radius (px)
 const ORB_RADIUS_HOVER = 10;   // orb radius when hovering an interactive card
-const THEME_HUE = 160;         // Emerald green to match the --accent theme color
-const HUE_SPREAD = 20;         // slight teal shift at the tail of the trail
-const SATURATION = 84;
-const LIGHTNESS = 45;          // bumped slightly up from 39 for better glow on dark background
+const THEME_HUE = 39;          // Gold to match the --accent theme color
+const HUE_SPREAD = 15;         // slight orange shift at the tail of the trail
+const SATURATION = 60;         // vibrant for glowing effect
+const LIGHTNESS = 60;          // bumped slightly up for better glow on dark background
 const RIPPLE_MAX = 6;          // max simultaneous click ripples
 const RIPPLE_SPEED = 3.2;      // px per normalized frame
 const RIPPLE_MAX_RADIUS = 60;

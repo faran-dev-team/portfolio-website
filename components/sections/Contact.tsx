@@ -33,7 +33,7 @@ export default function Contact() {
             initial={prefersReducedMotion ? "visible" : "hidden"}
             whileInView="visible"
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 mb-6 text-sm font-bold tracking-widest text-muted-foreground uppercase border-t border-b border-accent/20 py-1 px-4 text-accent"
+            className="inline-flex items-center gap-2 mb-6 brand-eyebrow border-t border-b border-accent/20 py-2 px-4"
           >
             GET IN TOUCH
           </motion.div>
@@ -251,7 +251,7 @@ export default function Contact() {
               <MagneticButton strength={0.15} className="mt-4">
                 <button
                   type="button"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors uppercase tracking-wider text-sm"
+                  className="w-full bg-accent hover:bg-accent-hover text-background font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors uppercase tracking-wider text-sm brand-eyebrow"
                 >
                   <Send className="w-4 h-4" />
                   SEND MESSAGE →

@@ -14,11 +14,11 @@ const galaxyDots = [
   { top: "25%", left: "80%", size: 4, delay: 1.1, duration: 5.5, yOffset: 20, xOffset: -10, opacity: 0.8 },
   { top: "75%", left: "10%", size: 2, delay: 0.5, duration: 3.5, yOffset: -10, xOffset: 15, opacity: 0.4 },
   { top: "85%", left: "85%", size: 5, delay: 2.0, duration: 6, yOffset: 25, xOffset: -20, opacity: 0.7 },
-  { top: "50%", left: "5%",  size: 3, delay: 0.8, duration: 4.5, yOffset: 15, xOffset: 10, opacity: 0.5 },
+  { top: "50%", left: "5%", size: 3, delay: 0.8, duration: 4.5, yOffset: 15, xOffset: 10, opacity: 0.5 },
   { top: "15%", left: "60%", size: 2, delay: 1.5, duration: 3.8, yOffset: -12, xOffset: -12, opacity: 0.4 },
   { top: "90%", left: "40%", size: 4, delay: 0.3, duration: 5, yOffset: 18, xOffset: 18, opacity: 0.9 },
   { top: "40%", left: "90%", size: 2, delay: 2.5, duration: 4.2, yOffset: -15, xOffset: -15, opacity: 0.5 },
-  { top: "5%",  left: "40%", size: 3, delay: 1.8, duration: 4.8, yOffset: 10, xOffset: 12, opacity: 0.6 },
+  { top: "5%", left: "40%", size: 3, delay: 1.8, duration: 4.8, yOffset: 10, xOffset: 12, opacity: 0.6 },
   { top: "60%", left: "95%", size: 2, delay: 0.9, duration: 3.2, yOffset: -8, xOffset: -10, opacity: 0.3 },
   { top: "95%", left: "70%", size: 3, delay: 1.2, duration: 5.2, yOffset: 22, xOffset: 14, opacity: 0.7 },
   { top: "35%", left: "20%", size: 4, delay: 0.1, duration: 4.1, yOffset: -18, xOffset: 16, opacity: 0.8 },
@@ -83,7 +83,7 @@ export default function Hero() {
             initial={prefersReducedMotion ? "visible" : "hidden"}
             animate="visible"
             transition={{ delay: badgeDelay, duration: 0.8, ease: EXPO_OUT }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 text-accent text-xs font-bold tracking-widest uppercase mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 text-accent text-xs font-mono font-bold tracking-widest uppercase mb-8"
             data-gravity="repel"
           >
             <Sparkles className="w-4 h-4" />
@@ -207,14 +207,11 @@ export default function Hero() {
 
           <div className="relative z-20 w-[500px] h-[500px] rounded-full overflow-hidden border border-accent/20 bg-card flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent pointer-events-none" />
-            <div className="text-center p-8">
-              <span className="text-muted-foreground/30 text-sm tracking-widest uppercase block mb-2">
-                [Portrait Image Placeholder]
-              </span>
-              <p className="text-muted-foreground/50 text-xs">
-                A circular image of the founder goes here.
-              </p>
-            </div>
+            <img
+              src="/logo/mark-ink.png"
+              alt="Measm Monogram"
+              className="w-48 h-48  object-contain opacity-90 transition-transform duration-700 hover:scale-110 hover:opacity-100"
+            />
           </div>
 
           {/* Glowing ring behind circle - reduced spread */}
