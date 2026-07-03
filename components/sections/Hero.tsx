@@ -205,12 +205,12 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="relative z-20 w-[500px] h-[500px] rounded-full overflow-hidden border border-accent/20 bg-card flex items-center justify-center">
+          <div className="relative z-20 w-[470px] h-[470px] rounded-full overflow-hidden border border-accent/20 bg-card flex items-center justify-center mb-90">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent pointer-events-none" />
             <img
-              src="/logo/mark-ink.png"
-              alt="Measm Monogram"
-              className="w-48 h-48  object-contain opacity-90 transition-transform duration-700 hover:scale-110 hover:opacity-100"
+              src="/logo/hero.jpeg"
+              alt="Measm Raza"
+              className="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-110 hover:opacity-100"
             />
           </div>
 

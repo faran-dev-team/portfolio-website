@@ -10,11 +10,10 @@ import { EXPO_OUT } from "@/lib/animations";
 const links = [
   { name: "Home", href: "/" },
   { name: "About", href: "/measm" },
-  { name: "Work", href: "/projects" },
   { name: "Impact", href: "/impact" },
   { name: "Awards", href: "/awards" },
   { name: "Academics", href: "/academics" },
-  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
 

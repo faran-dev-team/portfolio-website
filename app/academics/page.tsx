@@ -30,7 +30,7 @@ export default function AcademicsPage() {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
             High-achieving profile (4.0 GPA) focused on the intersection of AI,
-            entrepreneurship, and global policy at age 16.
+            entrepreneurship, and global policy.
           </p>
         </motion.div>
 

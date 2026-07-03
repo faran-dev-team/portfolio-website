@@ -9,11 +9,10 @@ import { SPRING_GENTLE, EXPO_OUT } from "@/lib/animations";
 
 const navLinks = [
   { name: "About", href: "/measm" },
-  { name: "Work", href: "/projects" },
   { name: "Impact", href: "/impact" },
   { name: "Awards", href: "/awards" },
   { name: "Academics", href: "/academics" },
-  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Projects", href: "/projects" },
 ];
 
 export default function Navbar() {

@@ -4,7 +4,7 @@ import { motion, useReducedMotion, useInView } from "framer-motion";
 import { PORTFOLIO_CONTENT } from "@/lib/content";
 import Link from "next/link";
 import {
-  Mail, MessageCircle, Instagram, Calendar, Send, Sparkles,
+  Mail, Instagram, Calendar, Send, Sparkles,
   ChevronLeft, ChevronRight
 } from "lucide-react";
 import { useRef } from "react";
@@ -69,12 +69,12 @@ export default function Contact() {
               value: contact.email,
               href: `mailto:${contact.email}`,
             },
-            {
-              icon: <MessageCircle className="w-5 h-5" />,
-              label: "WHATSAPP",
-              value: contact.whatsapp,
-              href: `https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, "")}`,
-            },
+            // {
+            //   icon: <MessageCircle className="w-5 h-5" />,
+            //   label: "WHATSAPP",
+            //   value: contact.whatsapp,
+            //   href: `https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, "")}`,
+            // },
             {
               icon: <Instagram className="w-5 h-5" />,
               label: "INSTAGRAM",

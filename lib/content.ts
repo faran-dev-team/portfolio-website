@@ -1,7 +1,7 @@
 export const PORTFOLIO_CONTENT = {
   home: {
     hero: {
-      badge: "Available for Impact · Operating Globally · Remote-First",
+      badge: "Available for Impact · Operating Globally",
       title: "Muhammad Measm Raza",
       subtitle: "Founder · Climate-Tech & Technology Entrepreneur · Global Impact Builder",
       description: "Founder and Executive Lead of MeeTech Labs, building and operating ventures across climate-tech, technology platforms, and digital services. I assemble teams, validate ideas, and ship real products for global adoption and measurable impact.",
@@ -270,7 +270,7 @@ export const PORTFOLIO_CONTENT = {
         id: "01",
         tag: "ACADEMICS",
         title: "CFA PROGRAM",
-        description: "Level I candidate (Feb 2026).",
+        description: "Level I candidate",
         icon: "target"
       },
       {
@@ -284,7 +284,7 @@ export const PORTFOLIO_CONTENT = {
         id: "03",
         tag: "TESTING",
         title: "GMAT / GRE",
-        description: "In preparation (target 750+ / 320+).",
+        description: "GMAT /GRE",
         icon: "briefcase"
       }
     ],
@@ -326,6 +326,12 @@ export const PORTFOLIO_CONTENT = {
         title: "GOLD KEY OF EXCELLENCE",
         description: "Delta Epsilon Tau National Honor Society. A symbol of honor for academic excellence.",
         icon: "key"
+      },
+      {
+        id: "04",
+        title: "UNIVERSITY OF NORTH TEXAS, USA",
+        description: "Bachelors of Business Administration.",
+        icon: "graduationCap"
       }
     ]
   },
@@ -441,7 +447,7 @@ export const PORTFOLIO_CONTENT = {
     cta: "LET'S BUILD TOGETHER",
     subtitle: "Have a project in mind? Choose your preferred way to connect.",
     email: "contact@muhammadmeasmraza.com",
-    whatsapp: "+971 56 375 6215",
-    instagram: "@mesamraza.official"
+    // whatsapp: "+971 56 375 6215",
+    instagram: "@measm__9"
   }
 };
